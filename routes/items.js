@@ -7,7 +7,7 @@ router.get('/search', (req, res) => itemController.searchItems(req, res));
 router.put('/bulk-update', (req, res) => itemController.bulkUpdate(req, res));
 router.delete('/delete-all', (req, res) => itemController.deleteAll(req, res));
 
-// Endpoints CRUD básicos
+// Endpoints
 router.get('/', (req, res) => itemController.getItems(req, res));
 router.get('/:id', (req, res) => itemController.getItemById(req, res));
 router.post('/', (req, res) => itemController.createItem(req, res));
